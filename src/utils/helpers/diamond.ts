@@ -815,6 +815,7 @@ export function updateGotchiLending(
 
     lending.lender = listingResult.lender;
     lending.originalOwner = listingResult.originalOwner;
+    lending.rentDuration = listingResult.period;
 
     if (listingResult.whitelistId != BIGINT_ZERO) {
         let whitelist = createOrUpdateWhitelist(
